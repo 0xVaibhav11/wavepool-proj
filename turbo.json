@@ -6,6 +6,9 @@
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
+    "build-pkg": {
+      "outputs": ["dist/**"]
+    },
     "lint": {},
     "dev": {
       "cache": false,
