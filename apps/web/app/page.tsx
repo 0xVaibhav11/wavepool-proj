@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card } from "../../../packages/superkit-ui";
 import styles from "./page.module.css";
+import { mulNums } from "superkit-sdk";
 
 function Gradient({
   conic,
@@ -64,11 +65,11 @@ export default function Page(): JSX.Element {
             target="_blank"
           >
             By{" "}
-            <Image
+            <img
               alt="Vercel Logo"
               className={styles.vercelLogo}
               height={24}
-              priority
+              // priority
               src="/vercel.svg"
               width={100}
             />
@@ -80,22 +81,17 @@ export default function Page(): JSX.Element {
         <div className={styles.heroContent}>
           <div className={styles.logos}>
             <div className={styles.circles}>
-              <Image
-                alt="Turborepo"
-                height={614}
-                src="circles.svg"
-                width={614}
-              />
+              <img alt="Turborepo" height={614} src="circles.svg" width={614} />
             </div>
             <div className={styles.logoGradientContainer}>
               <Gradient className={styles.logoGradient} conic small />
             </div>
 
             <div className={styles.logo}>
-              <Image
+              <img
                 alt=""
                 height={120}
-                priority
+                // priority
                 src="turborepo.svg"
                 width={120}
               />

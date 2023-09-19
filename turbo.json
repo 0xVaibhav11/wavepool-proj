@@ -7,7 +7,8 @@
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "build-pkg": {
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**"],
+      "cache": true
     },
     "lint": {},
     "dev": {

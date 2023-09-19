@@ -1,0 +1,3 @@
+[submodule "contracts/superfluid-scheduler/lib/forge-std"]
+	path = contracts/superfluid-scheduler/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
