@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.10",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "superkit-ui": "workspace:*",
-    "superkit-sdk": "workspace:*"
+    "superkit-sdk": "workspace:*",
+    "superkit-ui": "workspace:*"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.4.19",
