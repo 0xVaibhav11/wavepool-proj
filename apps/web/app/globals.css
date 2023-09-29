@@ -36,12 +36,18 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+    background-color: rgb(233, 239, 244);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+
 }
 
 a {
