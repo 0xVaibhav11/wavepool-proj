@@ -1,7 +1,17 @@
+"use client";
 import Image from "next/image";
 import { Card } from "../../../packages/superkit-ui";
 import styles from "./page.module.css";
-
+import { WagmiConfig, createConfig, mainnet } from "wagmi";
+import { createPublicClient, http } from "viem";
+import Widgit from "./widget/page";
+const config = createConfig({
+  autoConnect: true,
+  publicClient: createPublicClient({
+    chain: mainnet,
+    transport: http(),
+  }),
+});
 function Gradient({
   conic,
   className,
@@ -51,7 +61,8 @@ const LINKS = [
 
 export default function Page(): JSX.Element {
   return (
-    <main className={styles.main}>
+    <WagmiConfig config={config}>
+      {/* <main className={styles.main}>
       <div className={styles.description}>
         <p>
           examples/basic&nbsp;
@@ -131,6 +142,8 @@ export default function Page(): JSX.Element {
           </Card>
         ))}
       </div>
-    </main>
+    </main> */}
+      <Widgit receiver="0xf491799e95e56dE7587a753b78a557db773943Ae" />
+    </WagmiConfig>
   );
 }
