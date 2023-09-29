@@ -1,0 +1,207 @@
+.main1 {
+  display: flex;
+  width: 100%;
+  place-items: center;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(233, 239, 244);
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .carddiv {
+    color: black;
+    width: 37.5rem;
+    height: auto;
+
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0, 0, 0, 0.7;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+
+    > hr {
+      clear: both;
+      display: block;
+      width: 100%;
+      border-color: whitesmoke;
+    }
+    //first comp
+
+    .compfirst {
+      padding: 1.5rem;
+
+      .button {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        background-color: rgb(29, 178, 39);
+        border: solid transparent 1px;
+        text-align: center;
+        height: 3rem;
+        border-radius: 8px;
+        color: white;
+        padding: 12px;
+        justify-content: center;
+        &:hover {
+          background-color: rgb(29, 139, 37);
+        }
+      }
+      .text1 {
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .dropdowndiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        .dropdown {
+          width: 20rem;
+          height: 3rem;
+          border-radius: 8px;
+          margin-top: 1rem;
+          border-color: rgb(29, 178, 39);
+          font-size: 16px;
+          color: #a9a9ad;
+          padding: 12px;
+
+          &:focus {
+            border-color: #198754;
+            background-color: #effaf0;
+            border-color: white;
+            outline-color: white;
+            box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%);
+          }
+          &:checked {
+            background-color: #effaf0;
+
+            box-shadow: 0 0 10px 100px #4ddc3b inset;
+          }
+          > option {
+            background-color: #effaf0;
+            color: rgb(29, 178, 39);
+
+            &:focus {
+              border-color: #198754;
+              background-color: #effaf0;
+
+              box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%);
+            }
+            &:hover {
+              background-color: #effaf0;
+
+              box-shadow: 0 0 10px 100px #4ddc3b inset;
+            }
+          }
+        }
+      }
+
+      .chain {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        height: 70px;
+        .items {
+          padding: 10px;
+          background-color: rgb(29, 178, 39);
+          border: solid transparent 1px;
+          color: black;
+          height: 2.5rem;
+          border-radius: 8px;
+        }
+        .icon {
+          padding: 16px;
+          color: black;
+        }
+      }
+    }
+    // second comp
+    .componentsecond {
+      padding: 1.5rem;
+
+      .datepicker {
+        display: flex;
+        padding: 16px;
+        color: #a9a9ad;
+        gap: 8px;
+        flex-direction: row;
+        justify-content: center;
+        .startdate {
+          display: flex;
+        }
+      }
+      .text1 {
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+    //third comp
+
+    .componentthird {
+      padding: 1.5rem;
+      .text1 {
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .flowdata {
+        display: flex;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: center;
+
+        > img {
+          width: 4.5rem;
+          padding-top: 8px;
+          height: 2.5rem;
+        }
+
+        .card1 {
+          width: 20rem;
+          height: 3rem;
+          padding: 12px;
+          gap: 4px;
+          box-shadow: 0, 0, 0, 0.2;
+          border-radius: 8px;
+          display: flex;
+          place-items: center;
+          border: solid 1px;
+          font-size: 18px;
+          border-color: #a9a9ad;
+        }
+      }
+      .button {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        background-color: rgb(29, 178, 39);
+        border: solid transparent 1px;
+        text-align: center;
+        height: 3rem;
+        border-radius: 8px;
+        font-size: 16px;
+        color: white;
+        padding: 12px;
+        justify-content: center;
+        &:hover {
+          background-color: rgb(29, 139, 37);
+        }
+      }
+
+      .compdata {
+        display: flex;
+        justify-content: center;
+        color: #a9a9ad;
+        padding-top: 1rem;
+        align-items: center;
+      }
+    }
+  }
+}
