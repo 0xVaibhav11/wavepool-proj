@@ -9,10 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.11",
+    "@mui/x-date-pickers": "^6.15.0",
+    "dayjs": "^1.11.10",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "superkit-ui": "workspace:*"
+    "sass": "^1.67.0",
+    "superkit-ui": "workspace:*",
+    "viem": "^1.10.9",
+    "wagmi": "^1.4.1"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.4.19",
